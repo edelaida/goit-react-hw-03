@@ -1,7 +1,12 @@
 //import React from 'react'
 
-const SearchBox = () => {
-  return <div>SearchBox</div>;
+const SearchBox = ({ filter, handleFilter }) => {
+  return (
+    <div>
+      <h2>Search users</h2>
+      <input type="text" value={filter} onChange={handleFilter} />
+    </div>
+  );
 };
 
 export default SearchBox;
