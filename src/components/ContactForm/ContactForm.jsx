@@ -12,6 +12,7 @@ const ContactForm = ({ handleAdd }) => {
     handleAdd(values);
     actions.resetForm();
   };
+
   return (
     <Formik initialValues={FORM_INITIAL} onSubmit={handleSubmit}>
       <Form>

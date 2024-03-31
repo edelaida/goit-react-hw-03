@@ -23,9 +23,9 @@ function App() {
 
   const handleAdd = (formData) => {
     const finalUser = { ...formData, id: nanoid() };
-    // setUsers([...users, finalUser]);
+    setUsers([...users, finalUser]);
     // setUsers((prevState) => [...prevState, finalUser]);
-    setUsers((prevUsers) => [...prevUsers, finalUser]);
+    // setUsers((prevUsers) => [...prevUsers, finalUser]);
   };
 
   const handleDelete = (userId) => {
@@ -38,8 +38,8 @@ function App() {
 
   const filterUsers = users.filter(
     (user) =>
-      user.name.toLowerCase().includes(filter.toLowerCase) ||
-      user.number.includes(filter)
+      user.name.toLowerCase().includes(filter.toLowerCase()) ||
+      user.number.toLowerCase().includes(filter.toLowerCase())
   );
 
   return (
@@ -54,3 +54,6 @@ function App() {
 }
 
 export default App;
+
+// ||
+//       user.number.includes(filter)

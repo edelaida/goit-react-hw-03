@@ -1,10 +1,10 @@
 //import React from 'react'
 
-const SearchBox = ({ filter, handleFilter }) => {
+const SearchBox = ({ filter, onChangeFilter }) => {
   return (
     <div>
       <h2>Search users</h2>
-      <input type="text" value={filter} onChange={handleFilter} />
+      <input type="text" value={filter} onChange={onChangeFilter} />
     </div>
   );
 };
